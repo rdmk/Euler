@@ -1,0 +1,8 @@
+fib = [1]
+sum, i = 0, 0
+while fib[i] < 4_000_000:
+	if fib[i] % 2 == 0:
+		sum += fib[i]
+	fib.append(fib[i] + fib[i-1])
+	i += 1
+print(sum)
